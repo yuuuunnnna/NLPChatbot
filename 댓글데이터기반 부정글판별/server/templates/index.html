@@ -1,0 +1,31 @@
+<html lang="kr">
+    
+    <head>
+        <meta charset="UTF-8">
+        <title>Sware Detector</title>
+        <link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+
+    </head>
+    
+    <body>
+        <h1>욕을 잡자 욕을 잡자 욕욕욕!(Local)</h1>
+        
+        
+        <form action="/" method="POST">
+
+            <label>문장 :</label>
+            <input type="text" name="sentence">
+            
+            <button type="submit">확인</button>
+            
+
+            <h2> [예측 결과]</h2>
+                {% if result %}
+                <h3 >{{ result }}</h3>
+                {% endif %}
+
+        </form>
+        
+    </body>
+          
+</html>
